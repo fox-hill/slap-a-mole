@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 10px;
-  background: #ffc600;
+  background: #135485;
 }
 
 *, *:before, *:after {
@@ -12,6 +12,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Amatic SC', cursive;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto;
 }
 
 h1 {
@@ -19,6 +22,22 @@ h1 {
   font-size: 10rem;
   line-height: 1;
   margin-bottom: 0;
+}
+
+button {
+  border: 5px solid rgba(0, 0, 0, 0.03);
+  border-radius: 3px;
+  font-size: 20px;
+  background-color: #E5E5E5;
+}
+
+.instructions {
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+
+.button-wrapper{
+  text-align: center;
 }
 
 .score {
@@ -67,3 +86,22 @@ h1 {
 .hole.up .mole {
   top: 0;
 }
+
+.footer-wrapper {
+  font-family: sans-serif;
+  color: #135485;
+  background-color: white;
+  font-size: 14px;
+  padding: 10px;
+  bottom: 0px;
+  display: grid;
+  margin: auto;
+  width: auto;
+  height: auto;
+  border-radius: 25px;
+  grid-template-rows: 1fr;
+ }
+
+ .footer{
+  text-align: center;
+ }
